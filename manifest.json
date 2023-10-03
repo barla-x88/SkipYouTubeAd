@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "SkipYoutubeAd",
+  "version": "1.0",
+  "description": "Skip Youtube ad Automatically",
+  "icons": {
+    "128": "images/icon128.png",
+    "48": "images/icon48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "run_at": "document_end",
+      "js": ["scripts/YouTubeAdSkip.js"]
+    }
+  ]
+}
