@@ -1,7 +1,11 @@
 <h1 align="center">SkipYouTubeAd - A tiny extension for skipping Ads</h1>
 
 <p align="center"><img  src="images/icon128.png" alt="Image by rawpixel.com on Freepik"></p>
-This tiny chrome extension automatically skips skippable ads for you. This extension in not available on the chrome web store. It can be manually installed in chrome browsers.
+This tiny chrome extension automatically skips ads for you. This extension in not available on the chrome web store. It can be manually installed in chrome browsers.
+
+## Update
+
+Now works with Non-skippable Ads
 
 ## How to Install
 
