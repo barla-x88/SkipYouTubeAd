@@ -1,18 +1,30 @@
 function SkipYouTubeAd() {
-  console.log('SkipYoutubeAd Running');
+  console.log('SkipYoutubeAd Started');
 
-  //click on the skip button when it appears
+  const page = document.querySelector(
+    'ytd-page-manager#page-manager.style-scope.ytd-app'
+  );
+
+  //Skips All playing Ads
   const skipAd = () => {
+    const video = document.querySelector('.video-stream.html5-main-video');
+
+    //Skip Non-skippable Ads when they start playing
+    //prevents Ads from playing
+    if (video && document.querySelector('.ytp-ad-text.ytp-ad-preview-text')) {
+      video.currentTime = video.duration;
+    }
+
+    //Click on the skip button
     if (!document.querySelector('.ytp-ad-skip-button')) return;
     document.querySelector('.ytp-ad-skip-button').click();
-    console.log('Ad skipped');
   };
 
   const mutationObserver = new MutationObserver(() => {
     skipAd();
   });
 
-  mutationObserver.observe(document.body, {
+  mutationObserver.observe(page, {
     childList: true,
     subtree: true,
   });
