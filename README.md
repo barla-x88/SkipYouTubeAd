@@ -5,7 +5,8 @@ This tiny chrome extension automatically skips ads for you. This extension in no
 
 ## Update
 
-Now works with Non-skippable Ads
+Oct-15-2023 - Now works with Non-skippable Ads
+Nov-18-2023 - Updated to work with the recent changes on youtube
 
 ## How to Install
 

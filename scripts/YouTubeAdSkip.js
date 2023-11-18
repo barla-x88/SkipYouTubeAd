@@ -1,9 +1,7 @@
 function SkipYouTubeAd() {
   console.log('SkipYoutubeAd Started');
 
-  const page = document.querySelector(
-    'ytd-page-manager#page-manager.style-scope.ytd-app'
-  );
+  const page = document.querySelector('#page-manager');
 
   //Skips All playing Ads
   const skipAd = () => {
@@ -11,13 +9,16 @@ function SkipYouTubeAd() {
 
     //Skip Non-skippable Ads when they start playing
     //prevents Ads from playing
-    if (video && document.querySelector('.ytp-ad-text.ytp-ad-preview-text')) {
+    if (
+      video &&
+      document.querySelector('.ytp-ad-text.ytp-ad-preview-text-modern')
+    ) {
       video.currentTime = video.duration;
     }
 
     //Click on the skip button
-    if (!document.querySelector('.ytp-ad-skip-button')) return;
-    document.querySelector('.ytp-ad-skip-button').click();
+    if (!document.querySelector('.ytp-ad-skip-button-modern')) return;
+    document.querySelector('.ytp-ad-skip-button-modern').click();
   };
 
   const mutationObserver = new MutationObserver(() => {
