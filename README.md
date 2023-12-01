@@ -3,11 +3,13 @@
 <p align="center"><img  src="images/icon128.png" alt="Image by rawpixel.com on Freepik"></p>
 This tiny chrome extension automatically skips ads for you. This extension in not available on the chrome web store. It can be manually installed in chrome browsers.
 
-## Update
+## Updates
 
 Oct-15-2023 - Now works with Non-skippable Ads
 
 Nov-18-2023 - Updated to work with the recent changes on youtube
+
+Dec-01-2023 - Fixed extension malfunction caused by node type error
 
 ## How to Install
 

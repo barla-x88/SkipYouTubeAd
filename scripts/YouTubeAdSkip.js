@@ -1,7 +1,9 @@
 function SkipYouTubeAd() {
   console.log('SkipYoutubeAd Started');
 
-  const page = document.querySelector('#page-manager');
+  const page = document.querySelector(
+    'ytd-page-manager#page-manager.style-scope.ytd-app'
+  );
 
   //Skips All playing Ads
   const skipAd = () => {
